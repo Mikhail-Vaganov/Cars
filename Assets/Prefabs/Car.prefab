@@ -29,6 +29,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6040694988043220284}
+  - component: {fileID: 320228359895803737}
   m_Layer: 9
   m_Name: Car
   m_TagString: Untagged
@@ -53,6 +54,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320228359895803737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6040694988043220287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ebd5bcb757f4fd89ccfe13bad19a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CriticalSpeed: 3
+  MaxIdleTime: 3
 --- !u!1 &6040694989260985107
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +95,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6040694989260985107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.81, y: 0.98, z: 0.8496094}
+  m_LocalPosition: {x: -5.81, y: 0.63, z: 0.8496094}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6040694988043220284}
@@ -179,16 +194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6040694988043220284}
     m_Modifications:
-    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
-        type: 3}
-      propertyPath: m_Name
-      value: RightWheel
-      objectReference: {fileID: 0}
-    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 286546616726004362, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -244,6 +249,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
+        type: 3}
+      propertyPath: m_Name
+      value: RightWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 286546616726004360, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -252,7 +267,12 @@ PrefabInstance:
     - target: {fileID: 286546616726004360, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
       propertyPath: m_Distance
-      value: 1.8882798
+      value: 1.589371
+      objectReference: {fileID: 0}
+    - target: {fileID: 286546616726004360, guid: 45ff400bc05ee47589e42da42238643b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45ff400bc05ee47589e42da42238643b, type: 3}
@@ -275,16 +295,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6040694988043220284}
     m_Modifications:
-    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
-        type: 3}
-      propertyPath: m_Name
-      value: LeftWheel
-      objectReference: {fileID: 0}
-    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 286546616726004362, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -340,10 +350,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 286546616726004358, guid: 45ff400bc05ee47589e42da42238643b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 286546616726004360, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
       propertyPath: m_Distance
-      value: 2.0106142
+      value: 1.7359948
       objectReference: {fileID: 0}
     - target: {fileID: 286546616726004360, guid: 45ff400bc05ee47589e42da42238643b,
         type: 3}
